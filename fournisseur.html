@@ -123,7 +123,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link active" href="index.html">
                     <!-- <i class="bi bi-grid"></i> -->
                     <img src="https://cdn-icons-png.flaticon.com/512/3135/3135679.png" width="40rem" height="40rem"
                         style="margin-right: 0.5rem;">
@@ -172,8 +172,8 @@
             <h1>Emprunts</h1>
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Emprunts</li>
+                    <li class="breadcrumb-item"><a href="index.html">Emprunts</a></li>
+                    <li class="breadcrumb-item active">Fournisseur 1</li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
@@ -182,6 +182,7 @@
             <div class="row">
                 <div class="col-xl-4">
 
+                    <!-- Profil du fournisseur -->
                     <div class="card">
                         <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
@@ -192,6 +193,7 @@
                         </div>
                     </div>
 
+                    <!-- Création d'un nouvel enprumt -->
                     <div class="card">
                         <div class="card-body profile-card align-items-center">
                             <form>
@@ -225,7 +227,11 @@
 
                                 <li class="nav-item">
                                     <button class="nav-link active" data-bs-toggle="tab"
-                                        data-bs-target="#profile-overview">Emprunt 1</button>
+                                        data-bs-target="#profile-overview">04 Décembre 2022</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab"
+                                        data-bs-target="#profile-overview">01 Mars 2023</button>
                                 </li>
 
                             </ul>
@@ -233,25 +239,78 @@
 
                                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
 
+                                    <!-- Détails -->
                                     <div class="card-body">
-                                        <h5 class="card-title">Rembourssements effectués</h5>
-
-                                        <!-- Default List group -->
+                                        <h6 class="card-title">Détails</h6>
                                         <ul class="list-group">
+                                            <!-- item -->
                                             <li class="list-group-item">
                                                 <div class="d-flex justify-content-between">
-                                                    <p>Date</p>
-                                                    <p>Montant</p>
+                                                    <p>Intitulé</p>
+                                                    <p>3 sacs de manioc</p>
+                                                </div>
+                                            </li>
+                                            <!-- item -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex justify-content-between" >
+                                                    <p>Montant à rembourser</p>
+                                                    <p>300.000 FCFA</p>
+                                                </div>
+                                            </li>
+                                            <!-- item -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex justify-content-between" >
+                                                    <p>Montant déja remboursé</p>
+                                                    <p>200.000 FCFA</p>
+                                                </div>
+                                            </li>
+                                            <!-- item -->
+                                            <li class="list-group-item">
+                                                <div class="d-flex justify-content-between">
+                                                    <p>Reste à payer</p>
+                                                    <p>100.000 FCFA</p>
                                                 </div>
                                             </li>
                                             <li class="list-group-item">
                                                 <div class="d-flex justify-content-between">
-                                                    <p>Date</p>
-                                                    <p>Montant</p>
+                                                    <p>Echéance</p>
+                                                    <p>20 Janvier 2023</p>
                                                 </div>
                                             </li>
                                         </ul><!-- End Default List group -->
+                                    </div>
+                                    <!-- Rembourssements -->
+                                    <div class="card-body">
+                                        <h6 class="card-title">Rembourssements effectués</h6>
+                                        <!-- item de rembourssment -->
+                                        <ul class="list-group">
+                                            <li class="list-group-item detail-item-color">
+                                                <div class="d-flex justify-content-between">
+                                                    <p>10 Décembre 2022</p>
+                                                    <p>150.000 FCFA</p>
+                                                </div>
+                                            </li>
+                                            <!-- item de rembourssment -->
+                                            <li class="list-group-item detail-item-color">
+                                                <div class="d-flex justify-content-between">
+                                                    <p>18 Décembre 2022</p>
+                                                    <p>50.000 FCFA</p>
+                                                </div>
+                                            </li>
+                                        </ul><!-- End Default List group -->
+                                    </div>
 
+                                    <!-- Nouveau rembourssment -->
+                                    <div class="card-body">
+                                        <h6 class="card-title">Ajouter un rembourssment</h6>
+                                        <form>
+                                            <div class="">
+                                              <div class="col-md-8 col-lg-9">
+                                                <input name="montant" type="text" placeholder="Montant" class="form-control" id="currentPassword">
+                                              </div>
+                                              <button type="submit" class=" mt-2 btn btn-primary">Ajouter +</button>
+                                            </div>
+                                          </form>
                                     </div>
                                 </div>
 
