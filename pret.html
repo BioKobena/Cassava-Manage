@@ -279,7 +279,78 @@
                                                 </div>
                                             </li>
                                         </ul><!-- End Default List group -->
-                                        <button type="submit" class=" mt-2 btn btn-primary">Modifier</button>
+                                        <button
+                        type="button"
+                        class="btn btn-primary mt-4"
+                        data-bs-toggle="modal"
+                        data-bs-target="#verticalycentered"
+                      >
+                        Modifier
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="verticalycentered"
+                        tabindex="-1"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Modifier le prêt</h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <!-- No Labels Form -->
+                              <form class="col g-3">
+                                <div class="col-md-6 mb-2">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Intitulé"
+                                  />
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Montant à rembourser"
+                                  />
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Echeance"
+                                  />
+                                </div>
+                              </form>
+                              <!-- End No Labels Form -->
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                              >
+                                Annuler
+                              </button>
+                              <button type="button" class="btn btn-success">
+                                Enregistrer
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                        <button
+                                        type="button"
+                                        class="btn btn-danger mt-4"
+                                      >
+                                        Supprimer
+                                      </button>
                                     </div>
 
                                     <!-- Rembourssements -->
