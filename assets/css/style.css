@@ -700,11 +700,17 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  /* color: #4154f1;
+  background: #f6f9ff; */
   transition: 0.3;
-  background: #f6f9ff;
   padding: 10px 15px;
   border-radius: 4px;
+}
+
+.active{
+  font-weight: 600;
+  color: #4154f1;
+  background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link i {
@@ -1257,4 +1263,8 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+.detail-item-color{
+  background-color: rgba(202, 249, 221, 0.562);
 }

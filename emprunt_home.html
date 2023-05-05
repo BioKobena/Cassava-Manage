@@ -123,7 +123,7 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="emprunt_home.html">
+                <a class="nav-link active" href="emprunt_home.html">
                     <!-- <i class="bi bi-grid"></i> -->
                     <img src="https://cdn-icons-png.flaticon.com/512/3135/3135679.png" width="40rem" height="40rem"
                         style="margin-right: 0.5rem;">
@@ -169,66 +169,47 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Collaborateurs</h1>
+            <h1>Emprunts</h1>
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Configurations</li>
-                    <li class="breadcrumb-item active"><a href="collaborateur.html">Collaborateurs</a></li>
+                    <li class="breadcrumb-item"><a href="emprunt_home.html">Emprunts</a></li>
                 </ol>
             </nav>
         </div><!-- End Page Title -->
 
         <section class="section dashboard">
-            <p align="center" style="font-size: 1.5rem;">
-                Vous pouvez ajouter des collaborateurs <br> <a href="collaborateur_create.html" class=" mt-2 btn btn-primary">Ajouter maintenant +</a>
-            </p>
-            
-        </section>
 
-        <section class="section">
-            <div class="row">
-              <div class="col-lg-12">
-      
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Liste de vos collaborateurs (Fournisseurs et clients)</h5>      
-                    <!-- Table with stripped rows -->
-                    <table class="table datatable">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Nom</th>
-                          <th scope="col">Prénoms</th>
-                          <th scope="col">Type</th>
-                          <th scope="col">Photo</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Brandon</td>
-                          <td>Jacob</td>
-                          <td>Fournisseur</td>
-                          <td>none</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Bridie</td>
-                          <td>Kessler</td>
-                          <td>Client</td>
-                          <td>none</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <!-- End Table with stripped rows -->
-      
-                  </div>
+            <div class="row ">
+
+                <div class="col-lg-3">
+
+                    <div class="card">
+                        <div class="card-body">
+                           <a href="./fournisseur.html"><h5 class="card-title">Fournisseur 1</h5></a> 
+                            <ul>
+                                <li>Quantité </li>
+                                <li>Somme emprunté</li>
+                                <li>Somme remboursée</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-      
-              </div>
-            </div>
-          </section>
 
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="./fournisseur.html"><h5 class="card-title">Fournisseur 2</h5></a> 
+                            <ul>
+                                <li>Quantité </li>
+                                <li>Somme emprunté</li>
+                                <li>Somme remboursée</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main><!-- End #main -->
 
