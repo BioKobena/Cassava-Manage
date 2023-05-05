@@ -197,6 +197,7 @@
                           <th scope="col">#</th>
                           <th scope="col">Nom</th>
                           <th scope="col">Type</th>
+                          <th scope="col"></th>
                         </tr>
                       </thead>
                       <tbody>
@@ -204,11 +205,289 @@
                           <th scope="row">1</th>
                           <td>Manioc</td>
                           <td>#</td>
+                          <td
+                          style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1rem;
+                          "
+                        >
+                          <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#verticalycentered"
+                          >
+                            <a href="#"
+                              ><img
+                                style="width: 2rem; height: 2rem"
+                                src="./assets/img/delete.png"
+                                alt=""
+                              />
+                            </a>
+                          </button>
+                          <div
+                            class="modal fade"
+                            id="verticalycentered"
+                            tabindex="-1"
+                          >
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">
+                                    Supprimer le produit
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  Voulez vous vraiment supprimer ce produit ?
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Annuler
+                                  </button>
+                                  <button type="button" class="btn btn-danger">
+                                    supprimer
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#basicModal"
+                          >
+                            <a href="#"
+                              ><img
+                                style="width: 2rem; height: 2rem"
+                                src="./assets/img/edit.png"
+                                alt=""
+                              />
+                            </a>
+                          </button>
+                          <div class="modal fade" id="basicModal" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title text-center">
+                                    Modification du produit
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <!-- No Labels Form -->
+                                  <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Nom"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input
+                                        type="password"
+                                        class="form-control"
+                                        placeholder="Prénoms"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Contact"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select id="inputState" class="form-select">
+                                        <option selected>
+                                          --Type de collaboratuer--
+                                        </option>
+                                        <option>Fournisseur</option>
+                                        <option>Client</option>
+                                      </select>
+                                    </div>
+                                  </form>
+                                  <!-- End No Labels Form -->
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Annuler
+                                  </button>
+                                  <button type="button" class="btn btn-success">
+                                    Enregistrer
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Igname</td>
                           <td>#</td>
+                          <td
+                          style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1rem;
+                          "
+                        >
+                          <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#verticalycentered"
+                          >
+                            <a href="#"
+                              ><img
+                                style="width: 2rem; height: 2rem"
+                                src="./assets/img/delete.png"
+                                alt=""
+                              />
+                            </a>
+                          </button>
+                          <div
+                            class="modal fade"
+                            id="verticalycentered"
+                            tabindex="-1"
+                          >
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">
+                                    Supprimer le produit
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  Voulez vous vraiment supprimer ce produit ?
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Annuler
+                                  </button>
+                                  <button type="button" class="btn btn-danger">
+                                    supprimer
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <button
+                            type="button"
+                            class="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#basicModal"
+                          >
+                            <a href="#"
+                              ><img
+                                style="width: 2rem; height: 2rem"
+                                src="./assets/img/edit.png"
+                                alt=""
+                              />
+                            </a>
+                          </button>
+                          <div class="modal fade" id="basicModal" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title text-center">
+                                    Modification collaborateur
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <!-- No Labels Form -->
+                                  <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="Nom"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input
+                                        type="password"
+                                        class="form-control"
+                                        placeholder="Prénoms"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Contact"
+                                      />
+                                    </div>
+                                    <div class="col-md-6">
+                                      <select id="inputState" class="form-select">
+                                        <option selected>
+                                          --Type de collaboratuer--
+                                        </option>
+                                        <option>Fournisseur</option>
+                                        <option>Client</option>
+                                      </select>
+                                    </div>
+                                  </form>
+                                  <!-- End No Labels Form -->
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Annuler
+                                  </button>
+                                  <button type="button" class="btn btn-success">
+                                    Enregistrer
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                         </tr>
                       </tbody>
                     </table>
