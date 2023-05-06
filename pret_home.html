@@ -67,6 +67,7 @@
 
       <nav class="header-nav ms-auto">
           <ul class="d-flex align-items-center">
+            
 
               <li class="nav-item d-block d-lg-none">
                   <a class="nav-link nav-icon search-bar-toggle " href="#">
@@ -127,6 +128,16 @@
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
       <ul class="sidebar-nav" id="sidebar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="./dashboard.html">
+              <!-- <i class="bi bi-grid"></i> -->
+              <img src="./assets/img/dashboard.png" width="40rem" height="40rem"
+                  style="margin-right: 0.5rem;">
+              <span>Tableau de bord</span>
+          </a>
+      </li> 
+
         <li class="nav-item">
           <a class="nav-link" href="emprunt_home.html">
             <!-- <i class="bi bi-grid"></i> -->
@@ -197,8 +208,8 @@
         <h1>Prêts</h1>
         <nav>
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="emprunt_home.html">Home</a></li>
-            <li class="breadcrumb-item active">Prêts</li>
+            <li class="breadcrumb-item"><a href="emprunt_home.html">Prêts</a></li>
+            <!-- <li class="breadcrumb-item active">Prêts</li> -->
           </ol>
         </nav>
       </div>
@@ -207,34 +218,36 @@
       <section class="section dashboard">
         
         <div class="row">
-            
-          <div class="col-lg-3">
-           
+          <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
-        <a href="./pret.html">  <h5 class="card-title">Client 1</h5></a>
-                  <ul>
-                    <li>Quantité</li>
-                    <li>Somme emprunté</li>
-                    <li>Somme remboursée</li>
-                  </ul>
+                   
+                   <a href="./pret.html"><h5 class="card-title">Bio Paul</h5></a> 
+                   
+                    <ul>
+                        <li>Intitulé : <span class="text-primary" style="font-weight: bold;">4 paniers d'attiéké</span> </li>
+                        <li>Somme emprunté : <span class="text-danger" style="font-weight: bold;">100.000 frs</span> </li>
+                        <li>Somme remboursée : <span class="text-success" style="font-weight: bold;">40.000 frs</span> </li>
+                    </ul>
                 </div>
             </div>
-          </div>
+        </div>
 
-          <div class="col-lg-3">
-            <div class="card">
+        <div class="col-lg-4">
+          <div class="card">
               <div class="card-body">
-                <a href="./pret.html">  <h5 class="card-title">Client 2</h5></a>
-
-                <ul>
-                  <li>Quantité</li>
-                  <li>Somme emprunté</li>
-                  <li>Somme remboursée</li>
-                </ul>
+                 
+                 <a href="./pret.html"><h5 class="card-title">Blé Junior</h5></a> 
+                 
+                  <ul>
+                      <li>Intitulé : <span class="text-primary" style="font-weight: bold;">2 paniers d'attiéké</span> </li>
+                      <li>Somme emprunté : <span class="text-danger" style="font-weight: bold;">90.000 frs</span> </li>
+                      <li>Somme remboursée : <span class="text-success" style="font-weight: bold;">30.000 frs</span> </li>
+                  </ul>
               </div>
-            </div>
           </div>
+      </div>
+
         </div>
       </section>
     </main>
